@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feesue - 基于Github Issues的意见收集系统</title>
+</head>
+
+<body>
+    <div id="feesue-container"></div>
+    <script src="./dist/feesue.min.js"></script>
+    <script>
+        var feesue = new Feesue({
+            token: "b88fd92cc24cb7bb77e624016da7396c1b6738f0",
+            owner: "idoubi",
+            repo: "feesue",
+            state: "all",
+            labels: [],
+            direction: "desc",
+            sort: "updated_at",
+            theme_color: "#08a5e0",
+            per_page: 20,
+            product: {
+                name: "FEESUE",
+                intro: "基于Github Issues的意见收集系统。",
+                logo: "",
+                github_url: "https://github.com/idoubi/feesue",
+                github_title: "项目地址",
+                home_url: "https://idoubi.cc",
+                home_title: "作者博客",
+                comments_title: "用户反馈"
+            }
+        });
+
+        feesue.render("feesue-container");
+    </script>
+</body>
+
+</html>
