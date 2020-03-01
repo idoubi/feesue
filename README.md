@@ -4,7 +4,7 @@ Generate product feedback page based on Github Issues.
 
 ## Demo:
 
-[Feesue's feedback page](https://idoubi.github.io/feesue)
+[Feesue's feedback page](http://feesue.idoubi.cc)
 
 ## Basic Usage
 
